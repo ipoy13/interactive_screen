@@ -17,4 +17,10 @@
     @include('layout.navbar')
 </body>
 
+{{-- <div body>
+  <div container>
+    <header></header>
+  </div>
+</div> --}}
+
 </html>
