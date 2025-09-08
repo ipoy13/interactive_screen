@@ -18,12 +18,11 @@
         <p>Tap to explore who we are</p>
         </div>
         <div class="menu-content">
-            <div class="card-content">
-                <a href="{{ route('about.
-                about_sefas')}}">
+            <a href="{{ route('sefas.about')}}">
+                <div class="card-content">
                     <img src="{{ asset('../images/logo_sefas.png')}}">
-                </a>
-            </div>
+                </div>
+            </a>
             
             <div class="card-content">
                 <a href="#">
