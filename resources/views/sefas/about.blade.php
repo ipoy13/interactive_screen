@@ -7,7 +7,9 @@
     </div>
     <div style="display: flex; flex-direction: column; gap: 40px;">
         <div class="rectangle-card bg-gray-200">
-            <img src="{{ asset('images/about_customer.png') }}" alt="about">
+            <div class="rectangle-card-img-frame">
+                <img src="{{ asset('images/about_customer.png') }}" alt="about">
+            </div>
 
             <div>
                 <p class="title color-primary-500" style="margin-bottom: 40px">6,100+ Customers</p>
@@ -15,7 +17,9 @@
             </div>
         </div>
         <div class="rectangle-card bg-gray-700">
-            <img src="{{ asset('images/about_customer.png') }}" alt="about">
+            <div class="rectangle-card-img-frame">
+                <img src="{{ asset('images/about_liters.png') }}" alt="about">
+            </div>
 
             <div>
                 <p class="title color-gray-100" style="margin-bottom: 40px">More than<br>35 Million Liters</p>
@@ -23,7 +27,9 @@
             </div>
         </div>
         <div class="rectangle-card bg-primary-500">
-            <img src="{{ asset('images/about_customer.png') }}" alt="about">
+            <div class="rectangle-card-img-frame">
+                <img src="{{ asset('images/about_years.png') }}" alt="about">
+            </div>
 
             <div>
                 <p class="title color-gray-100" style="margin-bottom: 40px">More than<br>25 Years</p>
