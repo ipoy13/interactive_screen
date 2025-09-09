@@ -8,7 +8,7 @@
         </div>
         <div class="product-cards-container">
         @foreach ($categories as $category)
-            <div class="product-category-card" data-toggle="modal" data-target="#modal-product-{{ $category->id }}">
+            <a class="product-category-card" data-toggle="modal" data-target="#modal-product-{{ $category->id }}">
                 <div>
                     <p class="text-80 font-bold color-primary-500" style="margin-bottom: 24px;">{{$category->name}}</p>
                     {!! $category->description !!}
@@ -25,7 +25,7 @@
                         @endforeach
                     </div>
                 @endif
-            </div>
+            </a>
 
             {{-- Modal product --}}
             <div class="modal fade" id="modal-product-{{ $category->id }}">
@@ -43,7 +43,7 @@
                             <p class="text-40 font-bold color-gray-700" style="margin-bottom: 40px;">What are {{strtoupper($category->name)}} products?</p>
                             {{-- jika ada image/productnya --}}
                             @if ($images[0] != '') 
-                                <div class="flex-row" style="justify-content: space-between; align-items: center; width: 100%;">
+                                <div class="modal-product-logos" style="align-items: center; width: 100%;">
                                     @foreach ($images as $img)
                                         <div class="product-logo-bg">
                                             <img src="{{ asset($img) }}" alt="Product" height="115px">

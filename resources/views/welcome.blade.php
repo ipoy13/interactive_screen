@@ -24,11 +24,11 @@
                 </div>
             </a>
             
-            <div class="card-content">
-                <a href="#">
+            <a href="{{ route('bci.about')}}">
+                <div class="card-content">
                     <img src="{{ asset('../images/logo_bci.png')}}">
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="footer-content">
