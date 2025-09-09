@@ -43,7 +43,7 @@
 
 {{-- Modal preview image --}}
 <div class="modal fade" id="modal-facility">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-stable">
         <div class="modal-content" style="width: 100%">
             <p class="material-symbols" style="font-size: 80px; margin-left: auto; cursor: pointer" data-dismiss="modal">close</p>
 

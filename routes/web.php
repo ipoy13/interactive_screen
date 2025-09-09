@@ -9,3 +9,4 @@ Route::get('/', function () {
 Route::get('/sefas/about', [SefasController::class, 'about'])->name('sefas.about');
 Route::get('/sefas/warehouse', [SefasController::class, 'warehouse'])->name('sefas.warehouse');
 Route::get('/sefas/product', [SefasController::class, 'product'])->name('sefas.product');
+Route::get('/sefas/product/{type}', [SefasController::class, 'product_type'])->name('sefas.product_type');

@@ -18,25 +18,33 @@ class SefasController extends Controller
 
     public function warehouse()
     {
-        $warehouses = DB::table('db_warehouse')->get();
+        $warehouses = DB::table('warehouses')->get();
 
         return view('sefas/warehouse', compact('warehouses'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function product()
     {
-        return view('sefas/product');
+        $types = DB::table('product_types')->get();
+
+        return view('sefas/product', compact('types'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function product_type($type)
     {
-        //
+        $product_type = DB::table('product_types')->where('id', $type)->first();
+        $categories = DB::table('product_categories as a')
+                        ->leftJoin('products as b', 'a.id', '=', 'b.product_category_id')
+                        ->where('a.product_type_id', $type)
+                        ->groupBy('a.id')
+                        ->select(
+                            'a.*',
+                            DB::raw('GROUP_CONCAT(b.image) as images')
+                        )
+                        ->get();
+        $other_types = DB::table('product_types')->where('id', '!=', $type)->take(4)->get();
+
+        return view('sefas/product_type', compact('product_type','categories', 'other_types'));
     }
 
     /**
