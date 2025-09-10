@@ -27,7 +27,38 @@ class BCIController extends Controller
                     ->where('a.category_id', $category)
                     ->select('a.*', 'b.name as subcategory_name')
                     ->get();
+        $other_categories = DB::table('bci_product_categories')
+                            ->where('id', '!=', $category)
+                            ->orderBy('name', 'ASC')
+                            ->take(3)
+                            ->get();
+        $oems = DB::table('bci_product_oem')->get();
+        $industries = DB::table('bci_product_industry')->get();
 
-        return view('bci/product_category', compact('product_category', 'products'));
+        return view('bci/product_category', compact('product_category', 'products','other_categories', 'oems', 'industries'));
+    }
+
+    public function packaging()
+    {
+        $packagings = DB::table('bci_product_packaging')->get();
+
+        return view('bci/packaging', compact('packagings'));
+    }
+
+    public function sector()
+    {
+        $sectors = DB::table('sectors')->get();
+
+        return view('bci/sector', compact('sectors'));
+    }
+
+    public function blending()
+    {
+        return view('bci/blending');
+    }
+
+    public function customer()
+    {
+        return view('bci/customer');
     }
 }

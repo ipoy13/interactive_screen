@@ -7,7 +7,7 @@
             <p class="text-80 font-medium text-center" style="color: var(--color-bci-primary)">About BCI</p>
         </div>
         <div class="bci-about-section">
-            <p>Blue Coolant Indonesia (BCI) was founded in 2010 as part of SEFAS Group. BCI provides product solutions under the name and brand of Reco-Cool, supplies maintenance complementary products for all types of machines such as <span class="font-bold">coolant, degreaser</span> and <span class="font-bold">heavy-duty hand wash</span>.</p>
+            <p>Blue Coolant Indonesia (BCI) was founded in 2010 as part of SEFAS Group. BCI provides product solutions under the name and brand of Reco-Cool, supplies maintenance complementary products for all types of machines such as <span class="font-bold color-bci-primary">coolant, degreaser</span> and <span class="font-bold color-bci-primary">heavy-duty hand wash</span>.</p>
             <br>
             <p>BCI’s product lines are manufactured and <span class="font-bold" style="color: var(--color-bci-primary)">fully supported by Recochem International (Recochem Inc)</span>. Recochem is one of the largest engine coolant manufacturers and suppliers in the world, known for its premium quality antifreeze and coolant products.</p>
         </div>
@@ -16,7 +16,7 @@
         <div class="bci-rectangle-card">
             <div class="flex-row">
                 <div class="bci-about-icon-bg">
-                    <img src="{{ asset('images/bci_about_customer.png') }}" alt="Icon Customer" width="80" height="80">
+                    <img src="{{ asset('images/bci_about_customer.png') }}" alt="Icon Customer" width="140" height="140">
                 </div>
                 <div style="margin-left: 32px;">
                     <p class="text-124 font-bold">500+</p>
@@ -27,7 +27,7 @@
         <div class="bci-rectangle-card" style="margin-left: 80px;">
             <div class="flex-row">
                 <div class="bci-about-icon-bg">
-                    <img src="{{ asset('images/bci_about_industry.png') }}" alt="Icon Industry" width="80" height="80">
+                    <img src="{{ asset('images/bci_about_industry.png') }}" alt="Icon Industry" width="140" height="140">
                 </div>
                 <div style="margin-left: 32px;">
                     <p class="text-124 font-bold">10+</p>

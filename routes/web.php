@@ -21,3 +21,7 @@ Route::get('/sefas/sector', [SefasController::class, 'sector'])->name('sefas.sec
 Route::get('/bci/about', [BCIController::class, 'about'])->name('bci.about');
 Route::get('/bci/product', [BCIController::class, 'product'])->name('bci.product');
 Route::get('/bci/product/{category}', [BCIController::class, 'product_category'])->name('bci.product_category');
+Route::get('/bci/packaging', [BCIController::class, 'packaging'])->name('bci.packaging');
+Route::get('/bci/sector', [BCIController::class, 'sector'])->name('bci.sector');
+Route::get('/bci/blending', [BCIController::class, 'blending'])->name('bci.blending');
+Route::get('/bci/customer', [BCIController::class, 'customer'])->name('bci.customer');

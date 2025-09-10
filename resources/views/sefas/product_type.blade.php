@@ -32,7 +32,7 @@
                 <div class="modal-dialog modal-dialog-centered modal-stable">
                     <div class="modal-content" style="width: 100%; padding: 0; gap: 0;">
                         <div style="padding: 40px; margin-left: auto;">
-                            <p class="material-symbols" style="font-size: 80px;  cursor: pointer" data-dismiss="modal">close</p>
+                            <p class="material-symbols" style="font-size: 80px; color: #000; cursor: pointer" data-dismiss="modal">close</p>
                         </div>
 
                         <div style="padding: 100px; width: 100%;">
