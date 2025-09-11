@@ -47,35 +47,25 @@ class SefasController extends Controller
         return view('sefas/product_type', compact('product_type','categories', 'other_types'));
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function packaging()
     {
-        //
+        $packagings = DB::table('product_packagings')->get();
+
+        return view('sefas/packaging', compact('packagings'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function service()
     {
-        //
+        $services = DB::table('services')->get();
+        $flows = DB::table('service_flows')->get();
+
+        return view('sefas/service', compact('services', 'flows'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function sector()
     {
-        //
-    }
+        $sectors = DB::table('sectors')->get();
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        return view('sefas/sector', compact('sectors'));
     }
 }

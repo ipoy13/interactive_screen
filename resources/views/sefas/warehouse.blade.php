@@ -4,7 +4,7 @@
 <div class="body-container" style="padding: 0;">
     <div style="padding: 0 40px;">
         <div class="py-40px">
-            <p class="text-center text-64 font-medium">Warehouses</p>
+            <p class="text-center text-64 font-medium">Our Locations</p>
         </div>
         <div class="grid-warehouse">
             @foreach ($warehouses as $warehouse)
@@ -45,7 +45,7 @@
 <div class="modal fade" id="modal-facility">
     <div class="modal-dialog modal-dialog-centered modal-stable">
         <div class="modal-content" style="width: 100%">
-            <p class="material-symbols" style="font-size: 80px; margin-left: auto; cursor: pointer" data-dismiss="modal">close</p>
+            <p class="material-symbols" style="font-size: 80px; color: #000; margin-left: auto; cursor: pointer" data-dismiss="modal">close</p>
 
             <img id="modal-img" src="" class="img-fluid" alt="Facility">
         </div>
