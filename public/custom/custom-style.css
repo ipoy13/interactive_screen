@@ -140,6 +140,12 @@ p {
     background: var(--color-white);
     box-shadow: 0 -5.779px 2.889px 0 rgba(0, 0, 0, 0.15) inset, 0 2.889px 2.889px 0 rgba(255, 255, 255, 0.35) inset, 0 2.889px 10.835px 0 rgba(243, 108, 33, 0.15);
 }
+.card-content.shadow-sefas {
+    box-shadow: 0 -11.557px 5.779px 0 rgba(0, 0, 0, 0.15) inset, 0 5.779px 5.779px 0 rgba(255, 255, 255, 0.35) inset, 0 5.779px 21.67px 0 rgba(243, 108, 33, 0.15);
+}
+.card-content.shadow-bci {
+    box-shadow: 0 -11.557px 5.779px 0 rgba(0, 0, 0, 0.15) inset, 0 5.779px 5.779px 0 rgba(255, 255, 255, 0.35) inset, 0 5.779px 21.67px 0 rgba(17, 86, 235, 0.25);
+}
 
 .card-content img{
     height: 76px;

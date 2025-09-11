@@ -19,13 +19,13 @@
         </div>
         <div class="menu-content">
             <a href="{{ route('sefas.about')}}">
-                <div class="card-content">
+                <div class="card-content shadow-sefas">
                     <img src="{{ asset('../images/logo_sefas.png')}}">
                 </div>
             </a>
             
             <a href="{{ route('bci.about')}}">
-                <div class="card-content">
+                <div class="card-content shadow-bci">
                     <img src="{{ asset('../images/logo_bci_home.png')}}" style="height: 104px;">
                 </div>
             </a>
