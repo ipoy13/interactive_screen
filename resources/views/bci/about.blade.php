@@ -3,8 +3,8 @@
 @section('content')
 <div class="bci-body-container">
     <div>
-        <div class="py-40px">
-            <p class="text-80 font-medium text-center" style="color: var(--color-bci-primary)">About BCI</p>
+        <div class="py-20px">
+            <p class="text-40 font-medium text-center" style="color: var(--color-bci-primary)">About BCI</p>
         </div>
         <div class="bci-about-section">
             <p>Blue Coolant Indonesia (BCI) was founded in 2010 as part of SEFAS Group. BCI provides product solutions under the name and brand of Reco-Cool, supplies maintenance complementary products for all types of machines such as <span class="font-bold color-bci-primary">coolant, degreaser</span> and <span class="font-bold color-bci-primary">heavy-duty hand wash</span>.</p>
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div style="padding-top: 40px; margin-bottom: 280px;">
-        <p class="text-64 font-semibold color-black text-center">Network of Supply Points</p>
+        <p class="text-32 font-semibold color-black text-center">Network of Supply Points</p>
         <img src="{{ asset('images/bci_map.png')}}" alt="Supply Points Map" width="2040">
     </div>
 </div>

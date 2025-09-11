@@ -3,8 +3,8 @@
 @section('content')
 <div class="bci-body-container">
     <div>
-        <div class="py-40px">
-            <p class="text-80 font-medium text-center" style="color: var(--color-bci-primary)">{{ $product_category->name }}</p>
+        <div class="py-20px">
+            <p class="text-40 font-medium text-center" style="color: var(--color-bci-primary)">{{ $product_category->name }}</p>
         </div>
         <div class="bci-product-section">
             @foreach ($products as $product)
@@ -39,11 +39,11 @@
                             <div style="padding: 40px; margin-left: auto;">
                                 <p class="material-symbols" style="font-size: 80px; color: #000; cursor: pointer" data-dismiss="modal">close</p>
                             </div>
-                            <div class="py-40px">
+                            <div class="py-20px">
                                 <div class="flex-row">
                                     <img class="bci-product-img" src="{{ asset($product->image)}}" alt="Product Image">
                                     <div style="margin-left: 40px; display: flex; flex-direction: column; justify-content: center;">
-                                        <p class="text-80 font-bold color-bci-primary">{{ $product->title }}</p>
+                                        <p class="text-40 font-bold color-bci-primary">{{ $product->title }}</p>
                                         <div class="text-24 color-gray-800" style="line-height:36px; margin-top: 16px;">{!! $product->description !!}</div>
                                         <div style="margin-top: 40px;">
                                             <p class="text-40 font-medium color-bci-primary">Benefits</p>
@@ -123,8 +123,8 @@
         </div>
     </div>
     <div>
-        <div class="py-40px">
-            <p class="text-64 font-medium text-center" style="color: var(--color-bci-primary)">Other Products</p>
+        <div class="py-20px">
+            <p class="text-32 font-medium text-center" style="color: var(--color-bci-primary)">Other Products</p>
         </div>
         <div class="bci-other-product">
             @foreach ($other_categories as $other)
