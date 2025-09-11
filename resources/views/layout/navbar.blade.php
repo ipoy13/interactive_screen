@@ -46,16 +46,16 @@
                 <img
                     src="{{ asset('images/arrow_forward.svg') }}"
                     alt="Arrow"
-                    height="36"
-                    width="36" />
+                    height="18"
+                    width="18" />
                 Back
             </a>
             <a href="{{ route('home') }}" class="btn-primary" style="margin-left: auto">
                 <img
                     src="{{ asset('images/home_circle.svg') }}"
                     alt="Arrow"
-                    height="36"
-                    width="36" />
+                    height="18"
+                    width="18" />
                 Home
             </a>
         </div>
@@ -79,8 +79,8 @@
                 <img
                     src="{{ (request()->segment(2) == 'about') ? asset('images/logo_bci_white.png') : asset('images/logo_bci_ori.png') }}"
                     alt="BCI"
-                    height="80"
-                    width="80" />
+                    height="40"
+                    width="40" />
                 About Us
             </a>
             <a id="product-bci" href="{{ route('bci.product') }}" class="btn-navbar-bci  {{ (request()->segment(2) == 'product') ? 'active' : '' }}">
@@ -119,16 +119,16 @@
                 <img
                     src="{{ asset('images/arrow_forward_bci.svg') }}"
                     alt="Arrow"
-                    height="36"
-                    width="36" />
+                    height="18"
+                    width="18" />
                 Back
             </a>
             <a href="{{ route('home') }}" class="btn-secondary" style="margin-left: auto">
                 <img
                     src="{{ asset('images/home_circle_bci.svg') }}"
                     alt="Arrow"
-                    height="36"
-                    width="36" />
+                    height="18"
+                    width="18" />
                 Home
             </a>
         </div>

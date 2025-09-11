@@ -16,29 +16,29 @@
         <div class="bci-rectangle-card">
             <div class="flex-row">
                 <div class="bci-about-icon-bg">
-                    <img src="{{ asset('images/bci_about_customer.png') }}" alt="Icon Customer" width="140" height="140">
+                    <img src="{{ asset('images/bci_about_customer.png') }}" alt="Icon Customer" width="70" height="70">
                 </div>
-                <div style="margin-left: 32px;">
-                    <p class="text-124 font-bold">500+</p>
-                    <p class="text-40 font-medium">Customers</p>
+                <div style="margin-left: 16px;">
+                    <p class="text-56 font-bold">500+</p>
+                    <p class="text-20 font-medium">Customers</p>
                 </div>
             </div>
         </div>
         <div class="bci-rectangle-card" style="margin-left: 80px;">
             <div class="flex-row">
                 <div class="bci-about-icon-bg">
-                    <img src="{{ asset('images/bci_about_industry.png') }}" alt="Icon Industry" width="140" height="140">
+                    <img src="{{ asset('images/bci_about_industry.png') }}" alt="Icon Industry" width="70" height="70">
                 </div>
-                <div style="margin-left: 32px;">
-                    <p class="text-124 font-bold">10+</p>
-                    <p class="text-40 font-medium">Industry Sectors</p>
+                <div style="margin-left: 16px;">
+                    <p class="text-56 font-bold">10+</p>
+                    <p class="text-20 font-medium">Industry Sectors</p>
                 </div>
             </div>
         </div>
     </div>
-    <div style="padding-top: 40px; margin-bottom: 280px;">
+    <div style="padding-top: 20px; margin-bottom: 140px;">
         <p class="text-32 font-semibold color-black text-center">Network of Supply Points</p>
-        <img src="{{ asset('images/bci_map.png')}}" alt="Supply Points Map" width="2040">
+        <img src="{{ asset('images/bci_map.png')}}" alt="Supply Points Map" width="1020">
     </div>
 </div>
 @endsection
