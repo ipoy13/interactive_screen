@@ -27,7 +27,7 @@
                         @endif
                         <img class="bci-product-img-card" src="{{ asset($product->image) }}" alt="Product Image"></img>
                     </div>
-                    <div style="padding: 38px 12px;">
+                    <div style="padding: 20px 6px;">
                         <p>{{$product->title }}</p>
                     </div>
                 </div>
@@ -36,18 +36,18 @@
                 <div class="modal fade" id="bci-product-{{ $product->id }}">
                     <div class="modal-dialog modal-dialog-centered modal-stable">
                         <div class="modal-content" style="width: 100%; gap: 0;">
-                            <div style="padding: 40px; margin-left: auto;">
-                                <p class="material-symbols" style="font-size: 80px; color: #000; cursor: pointer" data-dismiss="modal">close</p>
+                            <div style="padding: 20px; margin-left: auto;">
+                                <p class="material-symbols" style="font-size: 40px; color: #000; cursor: pointer" data-dismiss="modal">close</p>
                             </div>
                             <div class="py-20px">
                                 <div class="flex-row">
                                     <img class="bci-product-img" src="{{ asset($product->image)}}" alt="Product Image">
-                                    <div style="margin-left: 40px; display: flex; flex-direction: column; justify-content: center;">
-                                        <p class="text-40 font-bold color-bci-primary">{{ $product->title }}</p>
-                                        <div class="text-24 color-gray-800" style="line-height:36px; margin-top: 16px;">{!! $product->description !!}</div>
-                                        <div style="margin-top: 40px;">
-                                            <p class="text-40 font-medium color-bci-primary">Benefits</p>
-                                            <div class="text-24" style="line-height: 36px; margin-top: 16px;">{!! $product->benefit !!}</div>
+                                    <div style="margin-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+                                        <p class="text-20 font-bold color-bci-primary">{{ $product->title }}</p>
+                                        <div class="text-12 color-gray-800" style="line-height:18px; margin-top: 8px;">{!! $product->description !!}</div>
+                                        <div style="margin-top: 20px;">
+                                            <p class="text-20 font-medium color-bci-primary">Benefits</p>
+                                            <div class="text-12" style="line-height: 18px; margin-top: 8px;">{!! $product->benefit !!}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -63,9 +63,9 @@
                                 <div class="bci-title-spec">
                                     <p>Specification & Approvals</p>
                                 </div>
-                                <div class="flex-row" style="gap: 40px; width: 100%">
+                                <div class="flex-row" style="gap: 20px; width: 100%">
                                     <div style="flex: 1">
-                                        <p class="text-24 font-medium color-bci-primary" style="padding: 10px 0;">OEM</p>
+                                        <p class="text-12 font-medium color-bci-primary" style="padding: 5px 0;">OEM</p>
                                         <table class="detail-table">
                                             <thead>
                                                 <tr>
@@ -90,7 +90,7 @@
                                         </table>
                                     </div>
                                     <div style="flex: 1">
-                                        <p class="text-24 font-medium color-bci-primary" style="padding: 10px 0;">INDUSTRY</p>
+                                        <p class="text-12 font-medium color-bci-primary" style="padding: 5px 0;">INDUSTRY</p>
                                         <table class="detail-table">
                                             <thead>
                                                 <tr>
@@ -129,7 +129,7 @@
         <div class="bci-other-product">
             @foreach ($other_categories as $other)
                 <a href="{{ route('bci.product_category', $other->id) }}">
-                    <div class="bci-other-product-card" style="background: url({{ asset($other->image_square) }})">
+                    <div class="bci-other-product-card" style="background-image: url({{ asset($other->image_square) }})">
                         <p style="z-index: 10;">{{$other->name}}</p>
                     </div>
                 </a>

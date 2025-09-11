@@ -9,7 +9,7 @@
         <div class="sector-section">
             @foreach ($sectors as $sector)
                 <div class="sector-card">
-                    <img class="sector-img-card" src="{{ asset($sector->sector_image)}}" alt="Sector">
+                    <img class="sector-img-card" src="{{ asset($sector->sector_image)}}" alt="Sector" height="270">
                     <div style="padding: 24px">
                         <p>{{ $sector->sector_name }}</p>
                     </div>
