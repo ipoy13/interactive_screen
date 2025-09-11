@@ -3,10 +3,10 @@
 @section('content')
 <div class="bci-body-container">
     <div>
-        <div class="py-40px">
-            <p class="text-center text-80 font-medium color-bci-primary">Our Customers</p>
+        <div class="py-20px">
+            <p class="text-center text-40 font-medium color-bci-primary">Our Customers</p>
         </div>
-        <div class="py-40px flex-col" style="align-items: center; gap: 40px;">
+        <div class="py-20px flex-col" style="align-items: center; gap: 40px;">
             <div class="bci-customer-rectangle-card">
                 <div class="bci-customer-title-card">
                     <p>Mining</p>

@@ -2,10 +2,10 @@
 
  @section('content')
 <div class="body-container" style="padding: 0;">
-    <div class="py-40px">
-        <p class="text-center text-64 font-medium">Products</p>
+    <div class="py-20px">
+        <p class="text-center text-32 font-medium">Products</p>
     </div>
-    <div class="product-type-section" style="padding: 40px;">
+    <div class="product-type-section" style="padding: 20px;">
         @foreach ($types as $type)
             <a href="{{ route('sefas.product_type', $type->id) }}">
                 <div class="product-type-card" 

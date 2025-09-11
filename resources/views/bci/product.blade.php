@@ -3,8 +3,8 @@
 @section('content')
 <div class="bci-body-container">
     <div>
-        <div class="py-40px">
-            <p class="text-80 font-medium text-center" style="color: var(--color-bci-primary)">Our Products</p>
+        <div class="py-20px">
+            <p class="text-40 font-medium text-center" style="color: var(--color-bci-primary)">Our Products</p>
         </div>
         <div class="bci-product-category-section">
             @foreach ($categories as $category)

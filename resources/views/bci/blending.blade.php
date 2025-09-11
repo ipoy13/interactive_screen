@@ -3,8 +3,8 @@
 @section('content')
 <div class="bci-body-container">
     <div>
-        <div class="py-40px">
-            <p class="text-center text-80 font-medium color-bci-primary">Our Blending Plant</p>
+        <div class="py-20px">
+            <p class="text-center text-40 font-medium color-bci-primary">Our Blending Plant</p>
         </div>
         <div class="flex-row" style="align-items: center">
             <img src="{{ asset('images/bci_blending_map.png') }}" alt="Blending Plant">
@@ -38,18 +38,18 @@
                 </div>
             </div>
         </div>
-        <div class="py-40px flex-col" style="gap: 80px;">
+        <div class="py-20px flex-col" style="gap: 80px;">
             <div class="bci-blending-rectangle">
                 <img src="{{ asset('images/blending_1.png') }}" alt="High Tech" width="400" height="400" style="border-radius: 24px;">
-                <p class="text-64 color-gray-800"><span class="font-bold color-black">High Technology</span> Coolant Manufacturing Unit</p>
+                <p class="text-32 color-gray-800"><span class="font-bold color-black">High Technology</span> Coolant Manufacturing Unit</p>
             </div>
             <div class="bci-blending-rectangle">
                 <img src="{{ asset('images/blending_2.png') }}" alt="Automatic" width="400" height="400" style="border-radius: 24px;">
-                <p class="text-64 color-gray-800"><span class="font-bold color-black">Automatic</span> Coolant Filling System</p>
+                <p class="text-32 color-gray-800"><span class="font-bold color-black">Automatic</span> Coolant Filling System</p>
             </div>
             <div class="bci-blending-rectangle">
                 <img src="{{ asset('images/blending_3.png') }}" alt="Extensive capacity" width="400" height="400" style="border-radius: 24px;">
-                <p class="text-64 color-gray-800"><span class="font-bold color-black">Extensive capacity</span> to meet local and export demands</p>
+                <p class="text-32 color-gray-800"><span class="font-bold color-black">Extensive capacity</span> to meet local and export demands</p>
             </div>
         </div>
     </div>

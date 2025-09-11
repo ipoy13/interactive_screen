@@ -3,8 +3,8 @@
  @section('content')
 <div class="bci-body-container" style="padding: 0;">
     <div>
-        <div class="py-40px">
-            <p class="text-center text-80 font-medium color-bci-primary">Our Packaging</p>
+        <div class="py-20px">
+            <p class="text-center text-40 font-medium color-bci-primary">Our Packaging</p>
         </div>
         <div class="bci-packaging-section" style="margin-bottom: 40px;">
             @foreach ($packagings as $packaging)

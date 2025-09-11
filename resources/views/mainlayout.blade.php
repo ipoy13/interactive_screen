@@ -13,24 +13,24 @@
 
  <body>
     @include('layout.header')
-    <div class="preloader" id="preloader">
+    {{-- <div class="preloader" id="preloader">
       <div class="preloader-inner">
         <div class="lds-ripple {{ request()->segment(1) }}"><div></div><div></div></div>
       </div>
-    </div>
+    </div> --}}
     @yield('content')
     @include('layout.navbar')
 </body>
 
 <script>
   // Wait for the entire page (including images) to load
-  window.addEventListener('load', function() {
-      const preloader = document.querySelector('.preloader');
+  // window.addEventListener('load', function() {
+  //     const preloader = document.querySelector('.preloader');
 
-      if (preloader) {
-          preloader.style.display = 'none';
-      }
-  });
+  //     if (preloader) {
+  //         preloader.style.display = 'none';
+  //     }
+  // });
 </script>
 
 </html>
