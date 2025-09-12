@@ -39,19 +39,19 @@
                             <p class="text-40 font-bold color-primary-500" style="margin-bottom: 12px;">{{$category->name}}</p>
                             <div class="text-20 color-black" style="max-width: 1362px; line-height: 130%;">{!! $category->description !!}</div>
                         </div>
+                        {{-- jika ada image/productnya --}}
+                        @if ($images[0] != '') 
                         <div style="padding: 50px; background: var(--color-gray-200);  width: 100%;">
                             <p class="text-20 font-bold color-gray-700" style="margin-bottom: 20px;">What are {{strtoupper($category->name)}} products?</p>
-                            {{-- jika ada image/productnya --}}
-                            @if ($images[0] != '') 
-                                <div class="modal-product-logos" style="align-items: center; width: 100%;">
-                                    @foreach ($images as $img)
-                                        <div class="product-logo-bg">
-                                            <img src="{{ asset($img) }}" alt="Product" height="57px">
-                                        </div>
-                                    @endforeach
-                                </div>
-                            @endif
+                            <div class="modal-product-logos" style="align-items: center; width: 100%;">
+                                @foreach ($images as $img)
+                                    <div class="product-logo-bg">
+                                        <img src="{{ asset($img) }}" alt="Product" height="57px">
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
