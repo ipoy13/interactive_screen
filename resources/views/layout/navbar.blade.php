@@ -59,20 +59,6 @@
                 Home
             </a>
         </div>
-        <script>
-            $(document).ready(function() {
-                $('.btn-navbar').on('click', function(event) {
-                    var id = $(this).attr('id');
-
-                    if (id == 'about') {
-                        $(this).find('img').attr('src', '{{ asset("images/logo_sefas_white.webp") }}');
-                    } else {
-                        $(this).find('path').css('fill', '#FDFDFD');
-                    }
-                    
-                });
-            })
-        </script>
     @else
         <div class="footer-gray">
             <a id="about-bci" href="{{ route('bci.about') }}" class="btn-navbar-bci {{ (request()->segment(2) == 'about') ? 'active' : '' }}">
@@ -132,20 +118,6 @@
                 Home
             </a>
         </div>
-        <script>
-            $(document).ready(function() {
-                $('.btn-navbar-bci').on('click', function(event) {
-                    var id = $(this).attr('id');
-
-                    if (id == 'about-bci') {
-                        $(this).find('img').attr('src', '{{ asset("images/logo_bci_white.webp") }}');
-                    } else {
-                        $(this).find('path').css('fill', '#FDFDFD');
-                    }
-                    
-                });
-            })
-        </script>
     @endif
 </div>
 
