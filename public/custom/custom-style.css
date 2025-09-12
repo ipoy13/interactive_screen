@@ -57,6 +57,7 @@
 }
 html, body {
     font-family: 'Roboto', sans-serif !important;
+    touch-action: none;
 }
 
 body.contents {
@@ -139,6 +140,12 @@ p {
     border-radius: 12px;
     background: var(--color-white);
     box-shadow: 0 -5.779px 2.889px 0 rgba(0, 0, 0, 0.15) inset, 0 2.889px 2.889px 0 rgba(255, 255, 255, 0.35) inset, 0 2.889px 10.835px 0 rgba(243, 108, 33, 0.15);
+}
+.card-content.shadow-sefas {
+    box-shadow: 0 -11.557px 5.779px 0 rgba(0, 0, 0, 0.15) inset, 0 5.779px 5.779px 0 rgba(255, 255, 255, 0.35) inset, 0 5.779px 21.67px 0 rgba(243, 108, 33, 0.15);
+}
+.card-content.shadow-bci {
+    box-shadow: 0 -11.557px 5.779px 0 rgba(0, 0, 0, 0.15) inset, 0 5.779px 5.779px 0 rgba(255, 255, 255, 0.35) inset, 0 5.779px 21.67px 0 rgba(17, 86, 235, 0.25);
 }
 
 .card-content img{
@@ -339,7 +346,8 @@ header {
 .btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary:active:hover,
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
   background: var(--color-primary-600);
   border: 2px solid var(--color-primary-100);
   box-shadow: none;
@@ -374,7 +382,8 @@ header {
 .btn-secondary:focus,
 .btn-secondary:active:focus,
 .btn-secondary:active:hover,
-.btn-secondary:not(:disabled):not(.disabled):active {
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
   background: var(--color-bci-secondary);
   /* border: 2px solid var(--color-information-100); */
   box-shadow: none;
@@ -649,7 +658,7 @@ header {
     height: 239px;
     flex-shrink: 0;
     border-radius: 12px;
-    background-image:url('../images/facility_1.jpg');
+    background-image:url('../images/facility_1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -659,7 +668,7 @@ header {
     height: 202px;
     flex-shrink: 0;
     border-radius: 12px;
-    background-image:url('../images/facility_2.jpg');
+    background-image:url('../images/facility_2.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -677,7 +686,7 @@ header {
     height: 201.5px;
     flex-shrink: 0;
     border-radius: 12px;
-    background-image:url('../images/facility_7.jpg');
+    background-image:url('../images/facility_7.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

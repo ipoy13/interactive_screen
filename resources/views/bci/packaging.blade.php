@@ -18,12 +18,12 @@
         </div>
     
         <div class="bci-grid-packaging">
-            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_1.png') }}" style="background-image: url({{ asset('images/packaging_1.png') }})"></div>
-            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_2.png') }}" style="background-image: url({{ asset('images/packaging_2.png') }})"></div>
-            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_3.png') }}" style="background-image: url({{ asset('images/packaging_3.png') }})"></div>
-            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_4.png') }}" style="background-image: url({{ asset('images/packaging_4.png') }})"></div>
-            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_5.png') }}" style="background-image: url({{ asset('images/packaging_5.png') }})"></div>
-            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_6.png') }}" style="background-image: url({{ asset('images/packaging_6.png') }})"></div>
+            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_1.webp') }}" style="background-image: url({{ asset('images/packaging_1.webp') }})"></div>
+            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_2.webp') }}" style="background-image: url({{ asset('images/packaging_2.webp') }})"></div>
+            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_3.webp') }}" style="background-image: url({{ asset('images/packaging_3.webp') }})"></div>
+            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_4.webp') }}" style="background-image: url({{ asset('images/packaging_4.webp') }})"></div>
+            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_5.webp') }}" style="background-image: url({{ asset('images/packaging_5.webp') }})"></div>
+            <div class="packaging-img btn-image" data-toggle="modal" data-target="#modal-packaging" data-src="{{ asset('images/packaging_6.webp') }}" style="background-image: url({{ asset('images/packaging_6.webp') }})"></div>
         </div>
     </div>
 </div>

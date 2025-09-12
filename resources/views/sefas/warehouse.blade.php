@@ -25,16 +25,16 @@
         <div class="facility-images">
             <div class="flex-row" style="justify-content: space-between">
                 <div class="flex-col" style="gap: 14px;">
-                    <div class="image-1 btn-image" data-toggle="modal" data-target="#modal-facility" data-src="{{ asset('images/facility_1.jpg') }}"></div>
+                    <div class="image-1 btn-image" data-toggle="modal" data-target="#modal-facility" data-src="{{ asset('images/facility_1.webp') }}"></div>
                     <div class="flex-row" style="gap: 12px;">
-                        <div class="image-row btn-image" data-toggle="modal" data-target="#modal-facility" style="background-image: url('../images/facility_3.jpg');" data-src="{{ asset('images/facility_3.jpg') }}"></div>
-                        <div class="image-row btn-image" data-toggle="modal" data-target="#modal-facility" style="background-image: url('../images/facility_4.jpg');" data-src="{{ asset('images/facility_4.jpg') }}"></div>
-                        <div class="image-row btn-image" data-toggle="modal" data-target="#modal-facility" style="background-image: url('../images/facility_5.jpg');" data-src="{{ asset('images/facility_5.jpg') }}"></div>
+                        <div class="image-row btn-image" data-toggle="modal" data-target="#modal-facility" style="background-image: url('../images/facility_3.webp');" data-src="{{ asset('images/facility_3.webp') }}"></div>
+                        <div class="image-row btn-image" data-toggle="modal" data-target="#modal-facility" style="background-image: url('../images/facility_4.webp');" data-src="{{ asset('images/facility_4.webp') }}"></div>
+                        <div class="image-row btn-image" data-toggle="modal" data-target="#modal-facility" style="background-image: url('../images/facility_5.webp');" data-src="{{ asset('images/facility_5.webp') }}"></div>
                     </div>
                 </div>
                 <div class="flex-col" style="gap: 14px;">
-                    <div class="image-2 btn-image" data-toggle="modal" data-target="#modal-facility" data-src="{{ asset('images/facility_2.jpg') }}"></div>
-                    <div class="image-7 btn-image" data-toggle="modal" data-target="#modal-facility" data-src="{{ asset('images/facility_7.jpg') }}"></div>
+                    <div class="image-2 btn-image" data-toggle="modal" data-target="#modal-facility" data-src="{{ asset('images/facility_2.webp') }}"></div>
+                    <div class="image-7 btn-image" data-toggle="modal" data-target="#modal-facility" data-src="{{ asset('images/facility_7.webp') }}"></div>
                 </div>
             </div>
         </div>

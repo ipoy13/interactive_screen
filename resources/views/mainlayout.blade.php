@@ -7,6 +7,7 @@
   <meta name="keywords" content="HTML, CSS, Laravel">
   <meta name="author" content="SEFAS, SAMOEDERA">
   <meta name="csrf-token" content="{{ csrf_token() }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   @include('layout.assets')
   <title>@yield('title', 'INTERACTIVE SCREEN')</title>
 </head>
