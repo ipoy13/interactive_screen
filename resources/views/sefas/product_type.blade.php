@@ -31,7 +31,7 @@
             <div class="modal fade" id="modal-product-{{ $category->id }}">
                 <div class="modal-dialog modal-dialog-centered modal-stable">
                     <div class="modal-content" style="width: 100%; padding: 0; gap: 0;">
-                        <div style="padding: 40px; margin-left: auto;">
+                        <div style="padding: 20px; margin-left: auto;">
                             <p class="material-symbols" style="font-size: 40px; color: #000; cursor: pointer" data-dismiss="modal">close</p>
                         </div>
 

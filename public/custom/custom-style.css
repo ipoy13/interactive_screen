@@ -247,22 +247,22 @@ header {
     font-weight: 500;
     line-height: 21px; /* 131.25% */
 }
-.btn-navbar:hover,
+
 .active.btn-navbar {
   background: linear-gradient(94deg, #F5894D -30.73%, #DD621E 129.85%);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   text-decoration: none;
 }
+.btn-navbar:hover,
 .btn-navbar:active,
 .btn-navbar:focus,
 .btn-navbar:active:focus,
 .btn-navbar:active:hover,
 .btn-navbar:not(:disabled):not(.disabled):active {
-  background: linear-gradient(94deg, #F5894D -30.73%, #DD621E 129.85%);
-  box-shadow: none;
-  color: var(--color-white);
+  color: var(--color-black);
+  text-decoration: none;
 }
-.btn-navbar.active svg path {
+.active.btn-navbar svg path {
     fill: #FDFDFD;
 }
 
@@ -288,22 +288,22 @@ header {
     font-weight: 500;
     line-height: 21px; /* 131.25% */
 }
-.btn-navbar-bci:hover,
+
 .active.btn-navbar-bci {
   background: linear-gradient(94deg, #1156EB -30.73%, #00166A 129.85%);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   text-decoration: none;
 }
+.btn-navbar-bci:hover,
 .btn-navbar-bci:active,
 .btn-navbar-bci:focus,
 .btn-navbar-bci:active:focus,
 .btn-navbar-bci:active:hover,
 .btn-navbar-bci:not(:disabled):not(.disabled):active {
-  background: linear-gradient(94deg, #1156EB -30.73%, #00166A 129.85%);
-  box-shadow: none;
-  color: var(--color-white);
+  color: var(--color-black);
+  text-decoration: none;
 }
-.btn-navbar-bci.active svg path {
+.active.btn-navbar-bci svg path {
     fill: #FDFDFD;
 }
 
