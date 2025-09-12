@@ -7,11 +7,11 @@
             <p class="text-center text-40 font-medium color-bci-primary">Our Blending Plant</p>
         </div>
         <div class="flex-row" style="align-items: center">
-            <img src="{{ asset('images/bci_blending_map.png') }}" alt="Blending Plant" height="410">
+            <img src="{{ asset('images/bci_blending_map.webp') }}" alt="Blending Plant" height="410">
             <div style="margin-left: 56px; display: flex; flex-direction: column; gap: 20px;">
                 <div class="flex-row" style="align-items: center">
                     <div class="bci-blending-icon-bg">
-                        <img src="{{ asset('images/logo_recochem.png') }}" alt="Recochem" width="45" height="45">
+                        <img src="{{ asset('images/logo_recochem.webp') }}" alt="Recochem" width="45" height="45">
                     </div>
                     <div style="margin-left: 12px;">
                         <p class="text-12 color-gray-900" style="line-height: 18px;">Globally Supported by</p>
@@ -20,7 +20,7 @@
                 </div>
                 <div class="flex-row" style="align-items: center">
                     <div class="bci-blending-icon-bg">
-                        <img src="{{ asset('images/logo_marine.png') }}" alt="Production Capacity" width="45" height="45">
+                        <img src="{{ asset('images/logo_marine.webp') }}" alt="Production Capacity" width="45" height="45">
                     </div>
                     <div style="margin-left: 12px;">
                         <p class="text-12 color-gray-900" style="line-height: 18px;">Production Capacity</p>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="flex-row" style="align-items: center">
                     <div class="bci-blending-icon-bg">
-                        <img src="{{ asset('images/logo_certificate.png') }}" alt="Logo Certificate" width="45" height="45">
+                        <img src="{{ asset('images/logo_certificate.webp') }}" alt="Logo Certificate" width="45" height="45">
                     </div>
                     <div style="margin-left: 12px;">
                         <p class="text-12 color-gray-900" style="line-height: 18px;">Certifications</p>
@@ -40,15 +40,15 @@
         </div>
         <div class="py-20px flex-col" style="gap: 40px;">
             <div class="bci-blending-rectangle">
-                <img src="{{ asset('images/blending_1.png') }}" alt="High Tech" width="200" height="200" style="border-radius: 12px;">
+                <img src="{{ asset('images/blending_1.webp') }}" alt="High Tech" width="200" height="200" style="border-radius: 12px;">
                 <p class="text-32 color-gray-800"><span class="font-bold color-black">High Technology</span> Coolant Manufacturing Unit</p>
             </div>
             <div class="bci-blending-rectangle">
-                <img src="{{ asset('images/blending_2.png') }}" alt="Automatic" width="200" height="200" style="border-radius: 12px;">
+                <img src="{{ asset('images/blending_2.webp') }}" alt="Automatic" width="200" height="200" style="border-radius: 12px;">
                 <p class="text-32 color-gray-800"><span class="font-bold color-black">Automatic</span> Coolant Filling System</p>
             </div>
             <div class="bci-blending-rectangle">
-                <img src="{{ asset('images/blending_3.png') }}" alt="Extensive capacity" width="200" height="200" style="border-radius: 12px;">
+                <img src="{{ asset('images/blending_3.webp') }}" alt="Extensive capacity" width="200" height="200" style="border-radius: 12px;">
                 <p class="text-32 color-gray-800"><span class="font-bold color-black">Extensive capacity</span> to meet local and export demands</p>
             </div>
         </div>
