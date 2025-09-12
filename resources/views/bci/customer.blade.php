@@ -23,8 +23,8 @@
                     <img src="{{ asset('images/customer_mitra_indah_lestari.webp') }}" alt="Logo Customer" height="16">
                     <img src="{{ asset('images/customer_ABJ.webp') }}" alt="Logo Customer" height="12">
                     <img src="{{ asset('images/customer_gpe.webp') }}" alt="Logo Customer" height="125">
-                    <img src="{{ asset('images/customer_bas.webp') }}" alt="Logo Customer" height="65">
-                    <img src="{{ asset('images/customer_sns.webp') }}" alt="Logo Customer" height="75" width="90.5">
+                    <img src="{{ asset('images/customer_bas.webp') }}" alt="Logo Customer" height="60">
+                    <img src="{{ asset('images/customer_sn.webp') }}" alt="Logo Customer" height="25">
                 </div>
             </div>
             <div class="bci-customer-rectangle-card">
@@ -52,14 +52,14 @@
                 </div>
                 <div class="bci-customer-value-card">
                     <img src="{{ asset('images/customer_rea.webp') }}" alt="Logo Customer" height="131">
-                    <img src="{{ asset('images/customer_sentosa.webp') }}" alt="Logo Customer" height="94">
-                    <img src="{{ asset('images/customer_gawi.webp') }}" alt="Logo Customer" height="131">
-                    <img src="{{ asset('images/customer_arung.webp') }}" alt="Logo Customer" height="31">
-                    <img src="{{ asset('images/customer_kuala_lumpur.webp') }}" alt="Logo Customer" height="87">
+                    <img src="{{ asset('images/customer_sentosa.webp') }}" alt="Logo Customer" height="90">
+                    <img src="{{ asset('images/customer_gawi.webp') }}" alt="Logo Customer" height="120">
+                    <img src="{{ asset('images/customer_arung.webp') }}" alt="Logo Customer" height="25">
+                    <img src="{{ asset('images/customer_kuala_lumpur.webp') }}" alt="Logo Customer" height="60">
                     <img src="{{ asset('images/customer_imc.webp') }}" alt="Logo Customer" height="45">
                     <img src="{{ asset('images/customer_sinar_wijaya.webp') }}" alt="Logo Customer" height="87">
                     <img src="{{ asset('images/customer_sukses_karya.webp') }}" alt="Logo Customer" height="24">
-                    <img src="{{ asset('images/customer_pancaran.webp') }}" alt="Logo Customer" height="94.5">
+                    <img src="{{ asset('images/customer_pancaran.webp') }}" alt="Logo Customer" height="60">
                 </div>
             </div>
             <div class="bci-customer-rectangle-card">
