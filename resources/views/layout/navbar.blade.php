@@ -4,7 +4,7 @@
         <div class="footer-gray">
             <a id="about" href="{{ route('sefas.about') }}" class="btn-navbar {{ (request()->segment(2) == 'about') ? 'active' : '' }}">
                 <img
-                    src="{{ (request()->segment(2) == 'about') ? asset('images/logo_sefas_white.png') : asset('images/logo_sefas_orange.png') }}"
+                    src="{{ (request()->segment(2) == 'about') ? asset('images/logo_sefas_white.webp') : asset('images/logo_sefas_orange.webp') }}"
                     alt="Sefas"
                     height="40"
                     width="40" />
@@ -59,25 +59,11 @@
                 Home
             </a>
         </div>
-        <script>
-            $(document).ready(function() {
-                $('.btn-navbar').on('click', function(event) {
-                    var id = $(this).attr('id');
-
-                    if (id == 'about') {
-                        $(this).find('img').attr('src', '{{ asset("images/logo_sefas_white.png") }}');
-                    } else {
-                        $(this).find('path').css('fill', '#FDFDFD');
-                    }
-                    
-                });
-            })
-        </script>
     @else
         <div class="footer-gray">
             <a id="about-bci" href="{{ route('bci.about') }}" class="btn-navbar-bci {{ (request()->segment(2) == 'about') ? 'active' : '' }}">
                 <img
-                    src="{{ (request()->segment(2) == 'about') ? asset('images/logo_bci_white.png') : asset('images/logo_bci_ori.png') }}"
+                    src="{{ (request()->segment(2) == 'about') ? asset('images/logo_bci_white.webp') : asset('images/logo_bci_ori.webp') }}"
                     alt="BCI"
                     height="40"
                     width="40" />
@@ -132,20 +118,6 @@
                 Home
             </a>
         </div>
-        <script>
-            $(document).ready(function() {
-                $('.btn-navbar-bci').on('click', function(event) {
-                    var id = $(this).attr('id');
-
-                    if (id == 'about-bci') {
-                        $(this).find('img').attr('src', '{{ asset("images/logo_bci_white.png") }}');
-                    } else {
-                        $(this).find('path').css('fill', '#FDFDFD');
-                    }
-                    
-                });
-            })
-        </script>
     @endif
 </div>
 

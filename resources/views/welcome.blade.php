@@ -19,14 +19,14 @@
         </div>
         <div class="menu-content">
             <a href="{{ route('sefas.about')}}">
-                <div class="card-content">
-                    <img src="{{ asset('../images/logo_sefas.png')}}">
+                <div class="card-content shadow-sefas">
+                    <img src="{{ asset('../images/logo_sefas.webp')}}">
                 </div>
             </a>
             
             <a href="{{ route('bci.about')}}">
-                <div class="card-content">
-                    <img src="{{ asset('../images/logo_bci_home.png')}}" style="height: 104px;">
+                <div class="card-content shadow-bci">
+                    <img src="{{ asset('../images/logo_bci_home.webp')}}" style="height: 104px;">
                 </div>
             </a>
         </div>
@@ -35,32 +35,32 @@
         <h1>SEFAS Group Companies</h1>
         <div class="icon-group-content">
             <div class="icon-content">
-                <img src="{{ asset('../images/logo_sp.png')}}">
+                <img src="{{ asset('../images/logo_sp.webp')}}">
             </div>
             <div class="icon-content">
-                <img src="{{ asset('../images/logo_sk.png')}}">
+                <img src="{{ asset('../images/logo_sk.webp')}}">
             </div>
             <div class="icon-content">
-                <img src="{{ asset('../images/logo_tp.png')}}">
-            </div>
-        </div>
-        <div class="icon-group-content">
-            <div class="icon-content">
-                <img src="{{ asset('../images/logo_ssp.png')}}">
-            </div>
-            <div class="icon-content">
-                <img src="{{ asset('../images/logo_pmm.png')}}">
-            </div>
-            <div class="icon-content">
-                <img src="{{ asset('../images/logo_bci_small.png')}}">
+                <img src="{{ asset('../images/logo_tp.webp')}}">
             </div>
         </div>
         <div class="icon-group-content">
             <div class="icon-content">
-                <img src="{{ asset('../images/logo_csb.png')}}">
+                <img src="{{ asset('../images/logo_ssp.webp')}}">
             </div>
             <div class="icon-content">
-                <img src="{{ asset('../images/logo_ehsb.png')}}">
+                <img src="{{ asset('../images/logo_pmm.webp')}}">
+            </div>
+            <div class="icon-content">
+                <img src="{{ asset('../images/logo_bci_small.webp')}}">
+            </div>
+        </div>
+        <div class="icon-group-content">
+            <div class="icon-content">
+                <img src="{{ asset('../images/logo_csb.webp')}}">
+            </div>
+            <div class="icon-content">
+                <img src="{{ asset('../images/logo_ehsb.webp')}}">
             </div>
         </div>
     </div>

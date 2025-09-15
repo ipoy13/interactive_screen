@@ -8,7 +8,7 @@
     <div style="display: flex; flex-direction: column; gap: 20px;">
         <div class="rectangle-card bg-gray-200">
             <div class="rectangle-card-img-frame">
-                <img src="{{ asset('images/about_customer.png') }}" alt="about">
+                <img src="{{ asset('images/about_customer.webp') }}" alt="about">
             </div>
 
             <div>
@@ -18,7 +18,7 @@
         </div>
         <div class="rectangle-card bg-gray-700">
             <div class="rectangle-card-img-frame">
-                <img src="{{ asset('images/about_liters.png') }}" alt="about">
+                <img src="{{ asset('images/about_liters.webp') }}" alt="about">
             </div>
 
             <div>
@@ -28,7 +28,7 @@
         </div>
         <div class="rectangle-card bg-primary-500">
             <div class="rectangle-card-img-frame">
-                <img src="{{ asset('images/about_years.png') }}" alt="about">
+                <img src="{{ asset('images/about_years.webp') }}" alt="about">
             </div>
 
             <div>
@@ -39,7 +39,7 @@
     </div>
     <div class="network" style="">
         <p class="title text-center">Network of Supply Points</p>
-        <img src="{{ asset('images/maps.png') }}" alt="supply points" style="width: 100%">
+        <img src="{{ asset('images/maps.webp') }}" alt="supply points" style="width: 100%">
     </div>
 </div>
 
