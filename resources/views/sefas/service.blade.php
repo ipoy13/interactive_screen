@@ -46,7 +46,7 @@
                                         @if ($flow->service_id == $service->id)
                                             <div class="service-flow-card">
                                                 <div class="flex-row" style="margin-bottom: 12px; justify-content: space-between; width: 100%;">
-                                                    <div class="service-flow-icon-bg" style="margin-left: 40%;">
+                                                    <div class="service-flow-icon-bg">
                                                         <img src="{{ asset($flow->image) }}" alt="Flow Icon" width="20" height="20">
                                                     </div>
                                                     <p class="service-flow-num">{{ sprintf("%02d", $no) }}</p>
