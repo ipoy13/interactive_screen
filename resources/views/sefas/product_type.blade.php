@@ -19,7 +19,7 @@
                 @endphp
                 {{-- jika ada image/productnya --}}
                 @if ($images_3[0] != '') 
-                    <div class="flex-row" style="justify-content: space-between; align-items: center; width: 100%;">
+                    <div class="flex-row" style="align-items: start; gap: 30px; width: 100%;">
                         @foreach ($images_3 as $img)
                             <img src="{{ asset($img) }}" alt="Product" height="36">
                         @endforeach
