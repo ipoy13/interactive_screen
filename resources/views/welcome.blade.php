@@ -26,7 +26,7 @@
             
             <a href="{{ route('bci.about')}}">
                 <div class="card-content shadow-bci">
-                    <img src="{{ asset('../images/logo_bci_home.webp')}}" style="height: 104px;">
+                    <img src="{{ asset('../images/logo_bci_home.webp')}}">
                 </div>
             </a>
         </div>

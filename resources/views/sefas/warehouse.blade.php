@@ -12,13 +12,13 @@
                     <img src="{{ asset($warehouse->warehouse_image) }}" alt="warehouse" width="80" height="80">
                     <div>
                         <p class="text-24 font-medium text-center color-gray-700">{{ $warehouse->warehouse_location }}</p>
-                        <p class="text-14 text-center color-gray-700" style="margin-top: 12px;">{{ $warehouse->warehouse_type }}</p>
+                        <p class="text-14 text-center color-gray-700 mt-12px">{{ $warehouse->warehouse_type }}</p>
                     </div>
                 </div>
             @endforeach
         </div>
     </div>
-    <div style="margin-bottom: 200px;">
+    <div class="facility-section">
         <div class="py-20px">
             <p class="text-center text-32 font-medium">Facilities</p>
         </div>

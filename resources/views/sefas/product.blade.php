@@ -5,7 +5,7 @@
     <div class="py-20px">
         <p class="text-center text-32 font-medium">Products</p>
     </div>
-    <div class="product-type-section" style="padding: 20px;">
+    <div class="product-type-section">
         @foreach ($types as $type)
             <a href="{{ route('sefas.product_type', $type->id) }}">
                 <div class="product-type-card" 

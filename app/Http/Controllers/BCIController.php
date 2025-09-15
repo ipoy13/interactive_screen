@@ -21,19 +21,20 @@ class BCIController extends Controller
 
     public function product_category($category)
     {
-        $product_category = DB::table('bci_product_categories')->where('id', $category)->first();
         $products = DB::table('bci_products as a')
                     ->leftJoin('bci_product_subcategories as b', 'a.subcategory_id', '=', 'b.id')
                     ->where('a.category_id', $category)
-                    ->select('a.*', 'b.name as subcategory_name')
+                    ->select('a.id', 'a.subcategory_id', 'a.description', 'a.image', 'a.title', 'a.benefit', 'a.oem_id', 'a.industry_id', 'b.name as subcategory_name')
                     ->get();
+        $product_category = DB::table('bci_product_categories')->where('id', $category)->select('name')->first();
         $other_categories = DB::table('bci_product_categories')
                             ->where('id', '!=', $category)
                             ->orderBy('name', 'ASC')
                             ->take(3)
+                            ->select('name', 'image_square', 'id')
                             ->get();
-        $oems = DB::table('bci_product_oem')->get();
-        $industries = DB::table('bci_product_industry')->get();
+        $oems = DB::table('bci_product_oem')->select('id', 'spec', 'approval')->get();
+        $industries = DB::table('bci_product_industry')->select('id', 'spec', 'approval')->get();
 
         return view('bci/product_category', compact('product_category', 'products','other_categories', 'oems', 'industries'));
     }
