@@ -1894,9 +1894,10 @@ header {
     .facility-images .flex-row {
         flex-direction: column !important;
     }
-    .facility-images .image-1 {
-        width: 320px;
-        height: 202px;
+    .facility-images .image-1,
+    .facility-images .image-2,
+    .facility-images .image-7 {
+        width: 100%;
     }
 
     /* products */
