@@ -38,7 +38,7 @@
     </div>
     <div style="padding-top: 20px; margin-bottom: 140px;">
         <p class="text-32 font-semibold color-black text-center">Network of Supply Points</p>
-        <img src="{{ asset('images/bci_map.webp')}}" alt="Supply Points Map" width="1020">
+        <img src="{{ asset('images/bci_map.webp')}}" class="bci-map" alt="Supply Points Map">
     </div>
 </div>
 @endsection
