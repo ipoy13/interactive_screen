@@ -37,7 +37,9 @@
                     <div class="modal-dialog modal-dialog-centered modal-stable">
                         <div class="modal-content" style="width: 100%; gap: 0;">
                             <div style="padding: 20px; margin-left: auto;">
-                                <p class="material-symbols" style="font-size: 40px; color: #000; cursor: pointer" data-dismiss="modal">close</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" style="margin-left: auto; cursor: pointer" data-dismiss="modal">
+                                    <path d="M24.1673 3.18203L21.8173 0.832031L12.5007 10.1487L3.18398 0.832031L0.833984 3.18203L10.1507 12.4987L0.833984 21.8154L3.18398 24.1654L12.5007 14.8487L21.8173 24.1654L24.1673 21.8154L14.8507 12.4987L24.1673 3.18203Z" fill="black"/>
+                                </svg>
                             </div>
                             <div class="py-20px">
                                 <div class="flex-row">
