@@ -7,15 +7,15 @@
             <p class="text-center text-40 font-medium color-bci-primary">Our Blending Plant</p>
         </div>
         <div class="flex-row" style="align-items: center">
-            <img src="{{ asset('images/bci_blending_map.webp') }}" alt="Blending Plant" height="410">
-            <div style="margin-left: 56px; display: flex; flex-direction: column; gap: 20px;">
+            <img class="blending-map-img" src="{{ asset('images/bci_blending_map.webp') }}" alt="Blending Plant">
+            <div class="blending-map-desc">
                 <div class="flex-row" style="align-items: center">
                     <div class="bci-blending-icon-bg">
                         <img src="{{ asset('images/logo_recochem.webp') }}" alt="Recochem" width="45" height="45">
                     </div>
                     <div style="margin-left: 12px;">
-                        <p class="text-12 color-gray-900" style="line-height: 18px;">Globally Supported by</p>
-                        <p class="text-20 font-bold color-bci-primary" style="line-height: 24px;">Recochem International</p>
+                        <p class="text-12 color-gray-900 lh-18px">Globally Supported by</p>
+                        <p class="text-20 font-bold color-bci-primary lh-24px">Recochem International</p>
                     </div>
                 </div>
                 <div class="flex-row" style="align-items: center">
@@ -23,8 +23,8 @@
                         <img src="{{ asset('images/logo_marine.webp') }}" alt="Production Capacity" width="45" height="45">
                     </div>
                     <div style="margin-left: 12px;">
-                        <p class="text-12 color-gray-900" style="line-height: 18px;">Production Capacity</p>
-                        <p class="text-20 font-bold color-bci-primary" style="line-height: 24px;">11,000 KL</p>
+                        <p class="text-12 color-gray-900 lh-18px">Production Capacity</p>
+                        <p class="text-20 font-bold color-bci-primary lh-24px">11,000 KL</p>
                     </div>
                 </div>
                 <div class="flex-row" style="align-items: center">
@@ -32,8 +32,8 @@
                         <img src="{{ asset('images/logo_certificate.webp') }}" alt="Logo Certificate" width="45" height="45">
                     </div>
                     <div style="margin-left: 12px;">
-                        <p class="text-12 color-gray-900" style="line-height: 18px;">Certifications</p>
-                        <p class="text-20 font-bold color-bci-primary" style="line-height: 24px;">ISO 9001; 14001; 45001</p>
+                        <p class="text-12 color-gray-900 lh-18px">Certifications</p>
+                        <p class="text-20 font-bold color-bci-primary lh-24px">ISO 9001; 14001; 45001</p>
                     </div>
                 </div>
             </div>

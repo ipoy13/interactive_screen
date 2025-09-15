@@ -46,10 +46,10 @@
                                     <img class="bci-product-img" src="{{ asset($product->image)}}" alt="Product Image">
                                     <div style="margin-left: 20px; display: flex; flex-direction: column; justify-content: center;">
                                         <p class="text-20 font-bold color-bci-primary">{{ $product->title }}</p>
-                                        <div class="text-12 color-gray-800" style="line-height:18px; margin-top: 8px;">{!! $product->description !!}</div>
+                                        <div class="text-12 color-gray-800 lh-18px" style="margin-top: 8px;">{!! $product->description !!}</div>
                                         <div style="margin-top: 20px;">
                                             <p class="text-20 font-medium color-bci-primary">Benefits</p>
-                                            <div class="text-12" style="line-height: 18px; margin-top: 8px;">{!! $product->benefit !!}</div>
+                                            <div class="text-12 lh-18px" style="margin-top: 8px;">{!! $product->benefit !!}</div>
                                         </div>
                                     </div>
                                 </div>

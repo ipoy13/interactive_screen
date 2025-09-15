@@ -7,7 +7,7 @@
   <meta name="keywords" content="HTML, CSS, Laravel">
   <meta name="author" content="SEFAS, SAMOEDERA">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> --}}
   @include('layout.assets')
   <title>@yield('title', 'INTERACTIVE SCREEN')</title>
 </head>
@@ -27,6 +27,20 @@
   window.addEventListener('contextmenu', e => {
     e.preventDefault();
   });
+
+  // MOBILE version: calculate device height
+  function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  // Set the height on initial load
+  setViewportHeight();
+  // Re-calculate on window resize (e.g., orientation change)
+  window.addEventListener('resize', setViewportHeight);
+  // END of MOBILE
+
+
+  
   // Wait for the entire page (including images) to load
   // window.addEventListener('load', function() {
   //     const preloader = document.querySelector('.preloader');
