@@ -154,6 +154,9 @@ p {
     align-self: stretch;
     aspect-ratio: 92/19;
 }
+.card-content.shadow-bci img {
+    height: 104px;
+}
 
 .footer-content{
     display: flex;
@@ -649,6 +652,9 @@ header {
     background: var(--color-white);
     /* border: 2px solid #CCC; */
 }
+.facility-section {
+    margin-bottom: 200px;
+}
 .facility-images {
     padding: 20px;
     /* background-color: var(--color-gray-100); */
@@ -942,6 +948,7 @@ header {
     border-radius: var(--Radius-radius-full, 999px);
     border: 6px solid var(--color-primary-500);
     background: var(--color-primary-500);
+    margin-left: 40%;
 }
 
 /* SECTOR */
@@ -1017,6 +1024,9 @@ header {
     border-radius: 12px;
     background: var(--color-white);
 }
+.bci-map {
+    width: 1020px;
+}
 
 /* PRODUCT */
 .bci-product-category-section {
@@ -1053,13 +1063,14 @@ header {
 }
 .bci-product-card {
     display: flex;
-    width: 240px;
+    width: 192px;
+    min-height: 272px;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-shrink: 0;
     gap: 6px;
-    align-self: stretch;
+    /* align-self: stretch; */
     border-radius: 12px;
     box-shadow: 0 2px 4px 0 #E2E2E2;
     background: var(--color-white);
@@ -1353,5 +1364,192 @@ header {
         width: 600px;
         height: 600px;
         opacity: 0;
+    }
+}
+
+/* CSS FOR TABLET */
+/* ipad pro width */
+@media (max-width: 1024px) {
+    body.contents {
+        max-height: 1066px;
+        margin-top: 300px;
+    }
+    .body-content {
+        gap: 20px;
+    }
+    .title-content {
+        gap: 6px;
+    }
+    .menu-content {
+        gap: 25px;
+    }
+
+    header {
+        width: 1014px;
+    }
+    .footer {
+        width: 1024px;
+    }
+    .footer-gray {
+        gap: 15px;
+    }
+    .body-container {
+        width: 1024px;
+        height: calc(1366px - 352.2px);
+        overflow-y: auto;
+    }
+    .bci-body-container {
+        width: 1024px;
+        height: calc(1366px - 357px);
+        overflow-y: auto;
+    }
+
+    /* modal */
+    .modal.fade.show .modal-dialog{
+        max-width: 990px;
+    }
+    .modal .modal-dialog.modal-stable {
+        max-width: 990px !important;
+        width: 990px;
+    }
+
+    /* about */
+    .about-section {
+        width: 960px;
+    }
+    .network {
+        margin-top: 40px;
+    }
+
+    /* locations */
+    .facility-section {
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    .facility-images .image-1 {
+        width: 650px;
+    }
+
+    /* products */
+    .other-product-type-section {
+        padding: 10px;
+    }
+    .product-category-card {
+        width: 310.667px;
+    }
+
+    /* service */
+    .service-card {
+        width: 310.667px;
+    }
+
+    /* sector */
+    .sector-card {
+        width: 310.667px;
+    }
+
+    /* about */
+    .bci-about-section {
+        width: 960px;
+    }
+    .bci-map {
+        width: 960px;
+    }
+}
+
+/* ipad mini width */
+@media (max-width: 768px) {
+    body.contents {
+        max-height: 874px;
+        margin-top: 150px;
+    }
+    .body-content {
+        gap: 20px;
+    }
+    .title-content {
+        gap: 6px;
+    }
+    .menu-content {
+        gap: 25px;
+    }
+    .footer-content {
+        width: 768px;
+        gap: 15px;
+    }
+
+    .card-content{
+        width: 300px;
+        height: 300px;
+    }
+    .card-content img {
+        height: 57px;
+    }
+    .card-content.shadow-bci img {
+        height: 78px;
+    }
+
+    header {
+        width: 758px;
+    }
+    .footer {
+        width: 768px;
+    }
+    .footer-gray {
+        gap: 10px;
+    }
+    .body-container {
+        width: 768px;
+        height: calc(1024px - 373.2px);
+        overflow-y: auto;
+    }
+    .btn-navbar {
+        width: 117px;
+    }
+
+    /* modal */
+    .modal.fade.show .modal-dialog{
+        max-width: 728px;
+    }
+    .modal .modal-dialog.modal-stable {
+        max-width: 728px !important;
+        width: 728px;
+    }
+
+    /* about */
+    .about-section {
+        width: 728px;
+    }
+    .network {
+        margin-top: 40px;
+    }
+    
+    /* locations */
+    .facility-section {
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    .facility-images .image-1 {
+        width: 400px;
+    }
+
+    /* products */
+    .other-product-type-section {
+        padding: 10px;
+    }
+    .product-type-square-card {
+        height: 184.5px;
+        width: 184.5px;
+        font-size: 30px;
+    }
+
+    /* services */
+    .service-img-modal {
+        height: 233.25px;
+    }
+    .service-flow-card {
+        padding: 6px;
+    }
+    .service-flow-num {
+        font-size: 30px;
     }
 }

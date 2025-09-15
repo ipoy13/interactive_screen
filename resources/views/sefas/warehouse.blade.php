@@ -18,7 +18,7 @@
             @endforeach
         </div>
     </div>
-    <div style="margin-bottom: 200px;">
+    <div class="facility-section">
         <div class="py-20px">
             <p class="text-center text-32 font-medium">Facilities</p>
         </div>

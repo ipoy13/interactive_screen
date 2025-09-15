@@ -24,6 +24,9 @@
 </body>
 
 <script>
+  window.addEventListener('contextmenu', e => {
+    e.preventDefault();
+  });
   // Wait for the entire page (including images) to load
   // window.addEventListener('load', function() {
   //     const preloader = document.querySelector('.preloader');
