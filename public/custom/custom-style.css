@@ -1881,7 +1881,7 @@ header {
     .facility-images .flex-row {
         flex-direction: column !important;
         min-height: 600px;
-        margin-bottom: 14px
+        margin-bottom: 14px;
     }
     .facility-images .image-1,
     .facility-images .image-2,
