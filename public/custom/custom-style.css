@@ -2003,7 +2003,7 @@ header {
         gap: 10px;
     }
     .sector-card {
-        width: 163px;
+        width: calc(50% - 20px);
         border-radius: 12px;
         font-size: 10px;
         line-height: 12px;
