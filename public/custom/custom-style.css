@@ -1452,37 +1452,38 @@ header {
     }
 
     header {
-        width: 1014px;
+        width: 100%;
     }
     .footer {
-        width: 1024px;
+        width: 100%;
     }
     .footer-gray {
         gap: 15px;
+        bottom: 0;
     }
     .body-container {
-        width: 1024px;
-        height: calc(1366px - 352.2px);
+        width: 100%;
+        height: calc(var(--vh) * 100 - 352.2px);
         overflow-y: auto;
     }
     .bci-body-container {
-        width: 1024px;
-        height: calc(1366px - 357px);
+        width: 100%;
+        height: calc(var(--vh) * 100 - 357px);
         overflow-y: auto;
     }
 
     /* modal */
     .modal.fade.show .modal-dialog{
-        max-width: 990px;
+        max-width: 95%;
     }
     .modal .modal-dialog.modal-stable {
-        max-width: 990px !important;
-        width: 990px;
+        max-width: 95%;
+        width: 95%;
     }
 
     /* about */
     .about-section {
-        width: 960px;
+        width: 100%;
     }
     .network {
         margin-top: 40px;
@@ -1506,6 +1507,9 @@ header {
     }
 
     /* service */
+    .services-section {
+        margin-bottom: 40px;
+    }
     .service-card {
         width: 310.667px;
     }
@@ -1516,11 +1520,11 @@ header {
     }
 
     /* about */
-    .bci-about-section {
-        width: 960px;
+    .bci-about-section { 
+        width: 100%;
     }
     .bci-map {
-        width: 960px;
+        width: calc(100% - 5px);
     }
 
     /* product */
@@ -1532,6 +1536,13 @@ header {
     }
     .bci-other-product-card {
         width: 310.667px;
+    }
+}
+
+@media (max-width: 820px) {
+    /* locations */
+    .facility-images .image-1 {
+        width: 400px;
     }
 }
 
@@ -1566,42 +1577,24 @@ header {
         height: 78px;
     }
 
-    header {
-        width: 758px;
-    }
-    .footer {
-        width: 768px;
-    }
     .footer-gray {
         gap: 10px;
     }
     .body-container {
-        width: 768px;
-        height: calc(1024px - 373.2px);
+        width: 100%;
+        height: calc(var(--vh) * 100 - 373.2px);
         overflow-y: auto;
     }
     .bci-body-container {
-        width: 768px;
-        height: calc(1024px - 373.2px);
+        width: 100%;
+        height: calc(var(--vh) * 100 - 373.2px);
         overflow-y: auto;
     }
     .btn-navbar, .btn-navbar-bci {
         width: 117px;
     }
 
-    /* modal */
-    .modal.fade.show .modal-dialog{
-        max-width: 728px;
-    }
-    .modal .modal-dialog.modal-stable {
-        max-width: 728px !important;
-        width: 728px;
-    }
-
     /* about */
-    .about-section {
-        width: 728px;
-    }
     .network {
         margin-top: 40px;
     }
@@ -1626,6 +1619,9 @@ header {
     }
 
     /* services */
+    .services-section {
+        margin-bottom: 40px;
+    }
     .service-img-modal {
         height: 233.25px;
     }
@@ -1636,14 +1632,6 @@ header {
         font-size: 30px;
     }
 
-    /* about */
-    .bci-about-section {
-        width: 730px;
-    }
-    .bci-map {
-        width: 730px;
-    }
-    
     /* product */
     .bci-product-card {
         width: 165px;
@@ -1664,7 +1652,7 @@ header {
 
     /* customer */
     .bci-customer-rectangle-card {
-        max-width: 728px;
+        width: calc(100% - 20px);
     }
 }
 
@@ -1720,7 +1708,6 @@ header {
     }
 
     header {
-        width: 100%;
         padding: 20px 10px;
         justify-content: center;
         align-items: center;
@@ -1730,7 +1717,6 @@ header {
         height: 23px;
     }
     .footer {
-        width: 100%;
         bottom: 0;
     }
     .footer-black, .footer-blue {
@@ -1843,7 +1829,6 @@ header {
 
     /* about */
     .about-section {
-        width: 100%;
         padding: 20px;
         font-size: 18px;
     }
@@ -1982,6 +1967,7 @@ header {
     /* service */
     .services-section {
         gap: 10px;
+        margin-bottom: 20px;
     }
     .service-card {
         width: 163px;
@@ -2027,7 +2013,6 @@ header {
 
     /* about */
     .bci-about-section {
-        width: 100%;
         padding: 20px;
         font-size: 15px;
         line-height: 18px;
@@ -2046,9 +2031,6 @@ header {
     .bci-about-icon-bg img {
         width: 35px;
         height: 35px;
-    }
-    .bci-map {
-        width: calc(100% - 5px);
     }
 
     /* product */
@@ -2151,9 +2133,6 @@ header {
     }
 
     /* customer */
-    .bci-customer-rectangle-card {
-        width: calc(100% - 20px);
-    }
     .bci-customer-title-card {
         width: 87px;
         padding: 4px 5px;
