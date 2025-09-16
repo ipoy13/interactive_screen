@@ -1880,6 +1880,8 @@ header {
     }
     .facility-images .flex-row {
         flex-direction: column !important;
+        min-height: 600px;
+        margin-bottom: 14px;
     }
     .facility-images .image-1,
     .facility-images .image-2,
@@ -2001,7 +2003,7 @@ header {
         gap: 10px;
     }
     .sector-card {
-        width: 163px;
+        width: calc(50% - 20px);
         border-radius: 12px;
         font-size: 10px;
         line-height: 12px;
