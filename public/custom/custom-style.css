@@ -1495,7 +1495,7 @@ header {
         margin-top: 40px;
     }
     .facility-images .image-1 {
-        width: 650px;
+        width: calc(100vw - 378px);
     }
 
     /* products */
@@ -1539,15 +1539,20 @@ header {
     }
 }
 
-@media (max-width: 820px) {
-    /* locations */
+/* @media (max-width: 820px) {
+    body.contents {
+        width: 100%;
+        max-height: calc(var(--vh)*100 - 300px);
+        margin-top: 300px;
+    }
+
     .facility-images .image-1 {
         width: 400px;
     }
-}
+} */
 
 /* ipad mini width */
-@media (max-width: 768px) {
+@media (max-width: 820px) { /* 768px */
     body.contents {
         max-height: 874px;
         margin-top: 150px;
@@ -1603,9 +1608,6 @@ header {
     .facility-section {
         margin-bottom: 0px;
         margin-top: 40px;
-    }
-    .facility-images .image-1 {
-        width: 400px;
     }
 
     /* products */
