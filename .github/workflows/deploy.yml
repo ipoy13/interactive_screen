@@ -1,0 +1,85 @@
+name: CI/CD COMPRO ke VPS
+
+# Trigger: Workflow ini berjalan setiap kali ada push ke branch 'main'
+on:
+  push:
+    branches: [main] # Ganti 'main' jika branch utama Anda 'master'
+
+jobs:
+  # Job 1: Menjalankan Tes (Continuous Integration)
+  build_and_test:
+    name: Build & Test
+    runs-on: ubuntu-latest # Menggunakan server Ubuntu dari GitHub
+
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3" # Sesuaikan dengan versi PHP Laravel 11 Anda
+          extensions: mbstring, xml, curl, zip, pdo, pdo_mysql
+          coverage: none
+
+      - name: Salin .env untuk testing
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+      - name: Install dependensi Composer
+        run: composer install --prefer-dist --no-progress
+
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Menjalankan tes (PHPUnit)
+        run: php artisan test
+
+  # Job 2: Deploy ke VPS (Continuous Deployment)
+  # Job ini HANYA berjalan JIKA job 'build_and_test' sukses
+  deploy:
+    name: Deploy to VPS
+    needs: build_and_test # Menunggu job 'build_and_test' selesai
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy ke server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_SSH_HOST }}
+          username: ${{ secrets.VPS_SSH_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 22 # Port SSH (default 22, ubah jika perlu)
+
+          # Script yang akan dijalankan di VPS Anda
+          script: |
+            set -e  # Berhenti jika ada perintah yang gagal
+            echo "🚀 Memulai proses deployment..."
+            cd ${{ secrets.PROJECT_PATH }}
+
+            # Pastikan git menganggap folder ini aman setiap kali deploy
+            git config --global --add safe.directory ${{ secrets.PROJECT_PATH }}
+
+            echo "🔒 Masuk ke mode maintenance..."
+            php artisan down || true
+
+            echo "🚚 Menarik kode terbaru..."
+            git fetch origin main
+            git reset --hard origin/main # Gunakan reset agar benar-benar identik dengan GitHub
+
+            echo "📦 Menginstall dependensi..."
+            composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+
+            echo "🔄 Menjalankan migrasi..."
+            php artisan migrate --force
+
+            echo "🧹 Membersihkan cache..."
+            php artisan optimize:clear
+
+            echo "✨ Membuat cache baru..."
+            php artisan optimize
+
+            echo "👷 Me-restart queue worker..."
+            php artisan queue:restart
+
+            echo "✅ Selesai!"
+            php artisan up
